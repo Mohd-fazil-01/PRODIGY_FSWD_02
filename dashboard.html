@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            background-color: rgb(1, 1, 32);
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+    
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(3, 3, 36);
+        }
+    
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+    
+        .left {
+            margin-left: 20px;
+            font-size: 2.5em;
+        }
+    
+        nav ul a {
+            font-size: 1em;
+            list-style: none;
+            margin: 0 26px;
+            color: white;
+            text-decoration: none;
+        }
+    
+        .firstSection {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            margin: 10px;
+            padding: 20px;
+            gap: 20px;
+        }
+    
+        .firstSection > div {
+            width: 45%; 
+        }
+    
+        .leftSection {
+            font-size: 1.2rem; 
+            line-height: 1.8; 
+            margin: none;
+        }
+    
+        .rightSection img {
+            width: 60%; 
+            height: auto; 
+            
+           
+        }
+    
+        .purple {
+            color: rgb(153, 10, 172);
+        }
+
+        @media (max-width: 768px) {
+            .firstSection {
+                flex-direction: column; 
+                gap: 20px;
+            }
+        
+            .firstSection > div {
+                width: 100%;
+            }
+        
+            form {
+                width: 90%; 
+            }
+        
+            nav ul a {
+                font-size: 16px; 
+                margin: 5px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Welcome to Admin Dashboard</div>
+            <div class="right">
+                <ul>
+                    <a href="display_employees.php">View Employees</a> 
+                    <a href="add-employee.html">Add Employee</a> 
+                    <a href="edit_employee.php">Edit Employee</a> 
+                    <a href="delete.html">Delete Employee</a> 
+                    <a href="login.html">Logout</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+       
+        <div class="firstSection">
+            <div class="leftSection">
+                Welcome to the <span class="purple">Employee Management System</span>!<br>  
+                Here, you can efficiently manage employee records.<br>Perform 
+                <span class="purple">CRUD</span> operations:<br> Create, Read, Update, and Delete employee details seamlessly.<br>
+                Experience a smooth and secure interface for all your administrative needs.
+            </div>
+
+            <div class="rightSection">
+                <img src="web.webp" alt="image">
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
